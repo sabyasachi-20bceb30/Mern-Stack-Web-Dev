@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT ASS3 Q1</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let n = Number(prompt('Enter the length of the Array'));
+    var a = new Array();
+    let sum = 0;
+    for(let i=0;i<n;i++)
+    {
+        a[i] = Number(prompt(`Enter the ${i+1} Element`));
+    }
+    document.write(`The Array => ${a}`);
+    document.write("<br>");
+    for(let j=0;j<n;j++)
+    {
+        if(a[j]>0 && a[j]%6==0)
+        {
+            sum = sum + a[j];
+        }
+    }
+    document.write(`Sum of the Elements that are positive and even and mutiple of 3 = ${sum}`);
+</script>
+</html>

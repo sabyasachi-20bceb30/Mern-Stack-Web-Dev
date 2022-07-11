@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT ASS3 Q4</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let n = Number(prompt('Enter length of the Array'));
+    var a = new Array();
+    for(let i=0;i<n;i++)
+    {
+        a[i] = Number(prompt(`Enter the ${i+1} Element`));
+    }
+    
+    let large = a[0];
+    function largest(a,n)
+    {
+        for(let j=1;j<n;j++)
+            {
+                if(large<a[j])
+                {
+                    large = a[j];   
+                }
+            }
+        return large;
+    }
+    document.write(`The Array => ${a}`);
+    document.write("<br>");
+    document.write(`The largest element = ${largest(a,n)}`);
+</script>
+</html>

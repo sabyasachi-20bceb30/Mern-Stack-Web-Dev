@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="reg.form.css">
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+
+    <div id="reg.form" style="background-color: rgb(25, 175, 235)">
+        <form action="">
+            <div>
+                *NAME: <input type="text" name="name" value="" placeholder="ENTER YOUR NAME">
+                <div id="name_error" style="display: none;"></div>
+            </div>
+            <div>
+                *EMAIL: <input type="email" name="email" value="" placeholder="ENTER YOUR EMAIL">
+                <div id="email_error" style="display: none;"></div>
+            </div>
+            <div>
+                PHONE NUMBER: <input type="text" name="phno" value="" placeholder="ENTER YOUR NUMBER">
+            </div>
+            <div>
+                <p>*GENDER</p>
+                <input type="radio" name="gender" value="MALE">MALE
+                <input type="radio" name="gender" value="FEMALE">FEMALE
+                <input type="radio" name="gender" value="OTHERS">OTHERS
+                <div id="gender_error" style="display: none;"></div>
+            </div>
+            <div>
+                <p>ADDRESS</p>
+                <textarea name="Address" id="Address" cols="100" rows="10" placeholder="ENTER YOUR ADDRESS"></textarea>
+            </div>
+            <div>
+                *PINCODE: <input type="text" name="pincode" value="" placeholder="ENTER PINCODE">
+                <div id="pincode_error" style="display: none;"></div>
+            </div>
+            <div>
+                *PASSWORD:<input type="password" name="PASSWORD" value="" placeholder="ENTER PASSWORD">
+                <div id="password_error" style="display: none;"></div>
+            </div>
+            <div>
+                *CONFIRM PASSWORD: <input type="password" name="confirm" value="" placeholder="ENTER PASSWORD TO CONFIRM">
+                <div id="confirm_error" style="display: none;"></div>
+            </div>
+            <div id="cb">
+                <input type="checkbox" id="t&c"> I AGREE TO ALL TERMS & CONDITONS
+                <span id="check_error" style="display: none;"></span>
+            </div>
+            <div id="submit">
+                <input type="SUBMIT" name="SUBMIT">
+            </div>
+        </form>
+    </div>
+
+    <div id="complete" style="background-color: rgba(220, 64, 64, 0.611);border: solid 2px rgb(191, 5, 228); text-align: center; font-size: xx-large;display: none;">
+        SUCCESSFULLY REGISTERED
+    </div>
+    <div id="content" style="display: none; font-size: large;font-weight: lighter;">
+    </div>
+</body>
+<script src="reg.js"></script>
+</html>

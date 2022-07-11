@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT ASS3 Q3</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let count=0;
+    let sum=0;
+    function isprime(i)
+    {
+        for(let j=2;j<i;j++)
+            {
+                if(i%j==0)
+                {
+                    return false;   
+                }
+            }
+        return true;
+    }
+    document.write(`Prime numbers are =>`);
+        for(let i=2;i<50 && count<10;i++)
+        {
+            if(isprime(i) == true)
+            {
+                document.write(`${i},`);
+                
+                count++;
+                sum = sum+i;
+            }
+            
+        }
+    document.write('<br>');
+    document.write(`SUM of the first 10 prime no. = ${sum}`);
+</script>
+</html>

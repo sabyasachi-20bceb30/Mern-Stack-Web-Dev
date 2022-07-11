@@ -1,0 +1,69 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    border-bottom: solid 2px black;
+}
+
+
+div{
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border: solid 2px rgb(199, 197, 197);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#cb{
+    border: none;
+    background-color: plum;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#submit{
+    border: none;
+    background-color: plum;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+input[type=submit]{
+    border: none;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(237, 37, 37, 0.858);
+    font-size: xx-large;
+    color: white;
+    border-radius: 50px;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+input[type=radio]{
+    margin: 0 5px 0 40px;
+    width: fit-content;
+}
+
+input[type=checkbox]{
+    margin: 0 5px 0 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+input,textarea{
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    font-family: monospace;
+    font-size: large;
+    border-radius: 5px;
+    border: solid 2px rgba(106, 105, 105, 0.642);
+}

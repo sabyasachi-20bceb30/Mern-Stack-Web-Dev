@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        body{
+            background-color: rgba(55, 255, 0, 0.715);
+        }
+        h1{
+            padding: 10px;
+            border-bottom: solid 2px rgb(64, 67, 63);
+            text-align: center;
+            font-weight: bolder;
+        }
+        table{
+            border: solid 2px rgb(64, 67, 63);
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th{
+            padding: 10px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        STUDENTS INFORMATION
+    </h1>
+    <table border="solid">
+        <tr>
+            <th>SIC</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PH.NO</th>
+            <th>BRANCH</th>
+            
+        </tr>
+        <tr>
+            <td>20bceb30</td>
+            <td>Sabyasachi</td>
+            <td>sabyasachi@gamil.com</td>
+            <td>8456091733</td>
+            <td>CEN</td>
+        </tr>
+        <tr>
+            <td>20bcsa43</td>
+            <td>Pradosh</td>
+            <td>pradosh746@gmail.com</td>
+            <td>9090259011</td>
+            <td>CSE</td>
+        </tr>
+        <tr>
+            <td>20bcee34</td>
+            <td>Arjyaman Das</td>
+            <td>dasarjyaman@gmail.com</td>
+            <td>9437227792</td>
+            <td>ECE</td>
+        </tr>
+        <tr>
+            <td>20bcst92</td>
+            <td>Bidur Sahoo</td>
+            <td>sbidur2002@gmail.com</td>
+            <td>8103795155</td>
+            <td>CST</td>
+        </tr>
+    </table>
+    <br>
+</body>
+<script>
+    const table = document.getElementsByTagName('table')[0];
+    table.rows[0].style.backgroundColor = "maroon";
+    table.rows[1].style.backgroundColor = "violet";
+    table.rows[2].style.backgroundColor = "yellow";
+    table.rows[3].style.backgroundColor = "grey";
+    table.rows[4].style.backgroundColor = "red";
+
+    document.write('TEXT OF THE EVEN CELLS ARE :-<br><br>');
+
+    for(let i=0;i<table.rows.length;i++)
+    {
+        for(let j=0;j<table.rows[0].cells.length;j++)
+        {
+            if(i%2 == 0 && j%2 == 0)
+            {
+                document.write(`Cell(${i},${j}) - ${table.rows[i].cells[j].innerText}<br>`);
+            }
+                
+        }
+    }
+</script>
+</html>
